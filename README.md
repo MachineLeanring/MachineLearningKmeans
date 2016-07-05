@@ -11,10 +11,9 @@
 
 -------------------------------
 
-# 结果及说明
+# 说明
 
-将上面的数据代入程序，可以获取如下结果示图。只是这个结果并不是一个确定的结果，会因结束条件、始初质心的选取不同而异（本程序的初始质心选取为随机选取）。
-*注：本程序中的数据为随机生成，如果你需要，也可以使用文件输入。只需要修改如下位置的代码即可：*
+本程序中的数据为随机生成，如果你需要，也可以使用文件输入。只需要修改如下位置的代码即可：
 
 ```java
 public class KmeansClient {
@@ -34,7 +33,27 @@ public class KmeansClient {
 }
 ```
 
+# 可视化
+
+将上面的数据代入程序，可以获取如下可视化结果。只是这个结果并不是一个确定的结果，会因结束条件、始初质心的选取不同而异（本程序的初始质心选取为随机选取）。
+此处使用的是 Gnuplot 可视化工具。执行可视化代码如下：
+
+```gnuplot
+plot "F:/Temp/kmeans/points_0" with linespoints pointtype 1 pointsize 1,\
+"F:/Temp/kmeans/points_1" with linespoints pointtype 2 pointsize 1,\
+"F:/Temp/kmeans/points_2" with linespoints pointtype 3 pointsize 1,\
+"F:/Temp/kmeans/points_3" with linespoints pointtype 4 pointsize 1,\
+"F:/Temp/kmeans/points_4" with linespoints pointtype 5 pointsize 1,\
+"F:/Temp/kmeans/points_5" with linespoints pointtype 6 pointsize 1,\
+"F:/Temp/kmeans/points_6" with linespoints pointtype 7 pointsize 1,\
+"F:/Temp/kmeans/points_7" with linespoints pointtype 8 pointsize 1,\
+"F:/Temp/kmeans/points_8" with linespoints pointtype 9 pointsize 1,\
+"F:/Temp/kmeans/points_9" with linespoints pointtype 10 pointsize 1
+```
+
 ![gnuplot](./images/20160705130926.png)
+
+
 
 ----------------------------------------------
 
