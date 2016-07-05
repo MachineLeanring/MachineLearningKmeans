@@ -25,7 +25,7 @@ public class KmeansClient {
     
     private void execute(int k, int threshold) {
         KmeansCore core = new KmeansCore();
-        List<Point2D> point2ds = KmeansUtils.randomPoint2DSet(1000, 1000, 10000);
+        List<Point2D> point2ds = KmeansUtils.randomPoint2DSet(1000, 1000, 500);
         List<Centroid> centroids = KmeansUtils.randomSelectCentroidSet(point2ds, k);
         
         core.positionCentroidCluster(point2ds, centroids, threshold);
